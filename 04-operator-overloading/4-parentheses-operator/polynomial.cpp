@@ -4,7 +4,7 @@
  * @author Erel Segal-Halevi
  * @since 2019-02
  */
-
+#include <cstdint>
 #include <iostream>
 #include <vector>
 
