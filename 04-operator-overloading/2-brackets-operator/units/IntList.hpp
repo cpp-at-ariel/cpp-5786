@@ -7,17 +7,17 @@ using namespace std;
 class IntList {
     private:
         int* theInts;
-        uint numInts;
+        unsigned int numInts;
 
     public:
-        IntList(uint numInts):
+        IntList(unsigned int numInts):
           numInts(numInts),
           theInts (new int[numInts])
         {
             cout << "constructing an IntList with " << numInts << " ints." << endl;
         }
 
-        IntList(uint numInts, int value): IntList(numInts)
+        IntList(unsigned int numInts, int value): IntList(numInts)
         {
             cout << "filling an IntList with " << numInts << " ints." << endl;
             // operator=(value);
@@ -40,8 +40,8 @@ class IntList {
         //   cout << "hihihi" << endl;
         // }
 
-        const int operator[](uint index) const;
-        int& operator[](uint index);
+        const int operator[](unsigned int index) const;
+        int& operator[](unsigned int index);
         //int get(uint index) {return theInts[index];} // Java style
         //void set(uint index, int newValue); // Java style
 
