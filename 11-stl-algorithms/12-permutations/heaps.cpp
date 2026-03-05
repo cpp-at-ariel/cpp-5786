@@ -13,7 +13,7 @@
 using namespace std;
 
 
-template<typename T> void print_vector_as_tree_recursive(ostream& out, const vector<T>& v, uint root=0, string prefix="") {
+template<typename T> void print_vector_as_tree_recursive(ostream& out, const vector<T>& v, unsigned int root=0, string prefix="") {
 	if (root >= v.size())
 		return;
 	out << endl << prefix << v[root];
