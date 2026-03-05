@@ -21,7 +21,7 @@ ostream& operator<< (ostream& out, const vector<T>& c) {
 }
 
 
-template<typename T, unsigned long N>
+template<typename T, size_t N>
 ostream& operator<< (ostream& out, const array<T,N>& c) {
 	return out << tostring(begin(c), end(c));
 }
