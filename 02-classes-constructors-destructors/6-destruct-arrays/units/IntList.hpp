@@ -6,10 +6,10 @@ using namespace std;
 class IntList {
     private:
         int* theInts;
-        uint numInts;
+        unsigned int numInts;
 
     public:
-        IntList(uint numInts) {
+        IntList(unsigned int numInts) {
             cout << "construct(" << numInts << ")" << endl;
             theInts = new int[numInts];
             this->numInts = numInts;
@@ -21,6 +21,6 @@ class IntList {
         }
 
         void fill(int value);
-        int get(uint index);
-        void put(uint index, int value);
+        int get(unsigned int index);
+        void put(unsigned int index, int value);
 };
