@@ -4,7 +4,7 @@
  * @author  Peter Gottschling
  * @url     https://github.com/petergottschling/discovering_modern_cpp/blob/master/c%2B%2B11/derivative.cpp
  */
-
+#include <cstdint>
 #include <cassert>
 #include <iostream>
 #include <memory>
