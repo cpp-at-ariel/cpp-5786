@@ -7,7 +7,7 @@
  * 
  * Since: 2018-04
  */
-
+#include <cstdint>
 #include <iostream>
 #include <fstream>
 using namespace std;
