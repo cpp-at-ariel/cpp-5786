@@ -9,11 +9,11 @@ using namespace std;
 
 class IntList {
     private:
-        uint numInts;
+        unsigned int numInts;
         int* theInts;
 
     public:
-        IntList(uint newNumInts): 
+        IntList(unsigned int newNumInts):
             numInts(newNumInts),
             theInts(new int[newNumInts]) 
             {  }
@@ -28,15 +28,15 @@ class IntList {
 
         void operator=(int value) {
             cout << "filling with "<<value<<"..."<<endl;
-            for (uint i=0; i<this->numInts; ++i)
+            for (unsigned int i=0; i<this->numInts; ++i)
                 theInts[i] = value;
         }
 
-        int operator[](uint index) const {
+        int operator[](unsigned int index) const {
             return theInts[index];
         }
 
-        int& operator[](uint index) {
+        int& operator[](unsigned int index) {
             return theInts[index];
         }
 };
