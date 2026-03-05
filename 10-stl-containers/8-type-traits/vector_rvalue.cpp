@@ -5,7 +5,7 @@
 using namespace std;
 
 template <class T>
-void f(T& t) {
+void f(const T& t) {
     cout << typeid(t).name() << endl;
 }
 
