@@ -12,7 +12,7 @@ class IntList {
         int dummy[NAME_LENGTH];
 
     public:
-        IntList(uint numInts) {
+        IntList(unsigned int numInts) {
             cout << "construct(" << numInts << ")" << endl;
             theInts = new int[numInts];
             listName = new char[NAME_LENGTH];
@@ -29,6 +29,6 @@ class IntList {
         void print() {cout << "  theInts=" << theInts << endl; }
 
         void fill(int value);
-        int get(uint index);
-        void put(uint index, int value);
+        int get(unsigned int index);
+        void put(unsigned int index, int value);
 };
