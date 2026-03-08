@@ -8,15 +8,14 @@
 #include <cmath>
 #include <cassert>
 #include <string>
+#include <format>    // new in c++20
 using namespace std;
 
 
 // Throw a string:
 double safesqrt(double x) {
 	if (x<0)
-		throw string(
-			"x must be non-negative, but it is "
-			+to_string(x));
+		throw format("x must be non-negative, but it is {}", x);
 	return std::sqrt(x);
 }
 
