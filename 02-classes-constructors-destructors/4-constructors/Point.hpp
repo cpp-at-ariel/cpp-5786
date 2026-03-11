@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-
+#include <string>
 class Point {
   private:    // Not required. All is private by default.
     int x;
