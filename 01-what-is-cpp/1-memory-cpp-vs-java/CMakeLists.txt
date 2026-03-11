@@ -1,5 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
-project(1-memory-cpp-vs-java)
-add_executable(a.out
-    Memory.cpp
+project(AutoProject CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_CXX_CLANG_TIDY
+    clang-tidy;
+    -checks=cppcoreguidelines-*
 )
+
+add_executable(Memory Memory.cpp)
