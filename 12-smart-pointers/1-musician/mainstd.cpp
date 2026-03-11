@@ -10,11 +10,12 @@
 #include <vector>
 #include <cstdlib>
 #include <memory>
+#include <string>
 #include "musician.hpp"
 
 
 using namespace std;
-
+using std::to_string;
 
 unique_ptr<Musician> musician_with_a_random_name(int i) {
 	unique_ptr<Musician> new_musician { new Musician("m_"+to_string(i)+"_"+to_string(rand())) };
