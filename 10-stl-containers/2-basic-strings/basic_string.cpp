@@ -27,11 +27,12 @@ struct Shape{
 ostream& operator<<(ostream& out, const Shape& s) {
 	return (out << "(" << s.x << "," << s.y << ")");
 }
-ostream& operator<< (ostream& out, const basic_string<Shape>& s) {
-	for (Shape i: s)
-		out << i;
-	return out;
-}
+
+// ostream& operator<< (ostream& out, const basic_string<Shape>& s) {
+// 	for (Shape i: s)
+// 		out << i;
+// 	return out;
+// }
 
 
 int main() {
