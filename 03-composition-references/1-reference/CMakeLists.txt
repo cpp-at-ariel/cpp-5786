@@ -4,6 +4,11 @@ project(AutoProject CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_CXX_CLANG_TIDY
+    clang-tidy;
+    -checks=cppcoreguidelines-*
+)
+
 add_executable(assign_a_reference assign_a_reference.cpp)
 add_executable(lvalue_rvalue_1 lvalue_rvalue_1.cpp)
 add_executable(lvalue_rvalue_2 lvalue_rvalue_2.cpp)
