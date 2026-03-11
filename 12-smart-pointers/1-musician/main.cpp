@@ -9,6 +9,7 @@
 #include <iostream>
 #include <vector>
 #include <cstdlib>
+#include <string>
 #include "musician.hpp"
 #include "AutoPointer.hpp"
 #include "UniquePointer.hpp"
@@ -16,7 +17,7 @@
 
 
 using namespace std;
-
+using std::to_string;
 
 // Play music with C-style pointers
 void playMusic1 (int numMusicians) {
