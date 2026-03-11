@@ -9,4 +9,4 @@ set(CMAKE_CXX_CLANG_TIDY
     -checks=cppcoreguidelines-*
 )
 
-add_executable(Complex Complex.cpp)
+add_executable(main Complex.cpp main.cpp)
