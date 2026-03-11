@@ -4,6 +4,11 @@ project(AutoProject CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_CXX_CLANG_TIDY
+    clang-tidy;
+    -checks=cppcoreguidelines-*
+)
+
 add_executable(find find_.cpp)
 add_executable(find_bounds find_bounds.cpp)
 add_executable(loops loops.cpp)
