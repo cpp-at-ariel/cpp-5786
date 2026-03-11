@@ -1,7 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
-project(3-namespace)
-set(CMAKE_CXX_STANDARD 23)
-add_executable(a.out
-    main.cpp
-    namespace.cpp
+project(AutoProject CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_CXX_CLANG_TIDY
+    clang-tidy;
+    -checks=cppcoreguidelines-*
 )
+
+add_executable(main main.cpp namespace.cpp)
