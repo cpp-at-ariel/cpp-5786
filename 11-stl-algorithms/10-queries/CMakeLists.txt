@@ -4,6 +4,11 @@ project(AutoProject CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_CXX_CLANG_TIDY
+    clang-tidy;
+    -checks=cppcoreguidelines-*
+)
+
 add_executable(numeric_queries numeric_queries.cpp)
 add_executable(property_queries property_queries.cpp)
 add_executable(search_queries search_queries.cpp)
