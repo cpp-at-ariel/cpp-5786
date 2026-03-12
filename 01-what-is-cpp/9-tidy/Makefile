@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main.exe
+# Target rules for targets named hello
 
 # Build rule for target.
-main.exe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main.exe
-.PHONY : main.exe
+hello: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello
+.PHONY : hello
 
 # fast build rule for target.
-main.exe/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/build
-.PHONY : main.exe/fast
+hello/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
+.PHONY : hello/fast
 
 hello.o: hello.cpp.o
 .PHONY : hello.o
 
 # target to build an object file
 hello.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/hello.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.o
 .PHONY : hello.cpp.o
 
 hello.i: hello.cpp.i
@@ -142,7 +142,7 @@ hello.i: hello.cpp.i
 
 # target to preprocess a source file
 hello.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/hello.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.i
 .PHONY : hello.cpp.i
 
 hello.s: hello.cpp.s
@@ -150,7 +150,7 @@ hello.s: hello.cpp.s
 
 # target to generate assembly for a file
 hello.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/hello.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.s
 .PHONY : hello.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main.exe"
+	@echo "... hello"
 	@echo "... hello.o"
 	@echo "... hello.i"
 	@echo "... hello.s"
