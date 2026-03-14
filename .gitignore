@@ -1,3 +1,7 @@
+# VScode files
+.vscode
+.vs
+
 # CMake files
 CMakeFiles
 cmake_install.cmake
