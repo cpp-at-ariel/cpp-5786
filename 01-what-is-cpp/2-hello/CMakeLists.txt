@@ -9,4 +9,4 @@ set(CMAKE_CXX_CLANG_TIDY
     -checks=cppcoreguidelines-*
 )
 
-add_executable(hello hello.cpp no_main.cpp)
+add_executable(main.exe hello.cpp no_main.cpp)
