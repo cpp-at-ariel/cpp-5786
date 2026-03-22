@@ -9,4 +9,4 @@ set(CMAKE_CXX_CLANG_TIDY
     -checks=cppcoreguidelines-*
 )
 
-add_executable(main main.cpp points.index.cpp)
+add_executable(a.out main.cpp points.index.cpp)

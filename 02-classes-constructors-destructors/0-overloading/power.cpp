@@ -35,7 +35,7 @@ int main() {
 
     cout << power(2, 3) << endl;
     cout << power(4.0, 0.5) << endl;
-    //cout << power(2, 3.5) << endl;  // ???
+    cout << power(2, 3.5) << endl;  // ???
     // cout << power(2.0,3.5) << endl;
     // cout << power(2, (int)3.5) << endl;  // ???
     // cout << power(2, -3) << endl;   // ???
