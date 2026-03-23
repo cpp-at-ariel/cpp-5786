@@ -6,7 +6,7 @@
 class Point {
 	private int x;
 	private int y;
-	public Point() { x = y = 5555; }	
+	public Point() { x = y = 5555; }
 };
 
 

@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named a.out
+# Target rules for targets named Memory
 
 # Build rule for target.
-a.out: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 a.out
-.PHONY : a.out
+Memory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Memory
+.PHONY : Memory
 
 # fast build rule for target.
-a.out/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/build
-.PHONY : a.out/fast
+Memory/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Memory.dir/build.make CMakeFiles/Memory.dir/build
+.PHONY : Memory/fast
 
 Memory.o: Memory.cpp.o
 .PHONY : Memory.o
 
 # target to build an object file
 Memory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Memory.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Memory.dir/build.make CMakeFiles/Memory.dir/Memory.cpp.o
 .PHONY : Memory.cpp.o
 
 Memory.i: Memory.cpp.i
@@ -142,7 +142,7 @@ Memory.i: Memory.cpp.i
 
 # target to preprocess a source file
 Memory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Memory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Memory.dir/build.make CMakeFiles/Memory.dir/Memory.cpp.i
 .PHONY : Memory.cpp.i
 
 Memory.s: Memory.cpp.s
@@ -150,7 +150,7 @@ Memory.s: Memory.cpp.s
 
 # target to generate assembly for a file
 Memory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Memory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Memory.dir/build.make CMakeFiles/Memory.dir/Memory.cpp.s
 .PHONY : Memory.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... a.out"
+	@echo "... Memory"
 	@echo "... Memory.o"
 	@echo "... Memory.i"
 	@echo "... Memory.s"

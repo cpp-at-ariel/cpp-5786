@@ -16,6 +16,7 @@ public:
         return std::to_string(re)+"+"+std::to_string(im)+"i";
     }
     Complex sum(Complex b);        // "outline" method
+    void print();        // "outline" method
 };
 
 
@@ -25,14 +26,16 @@ Complex::Complex(double re1, double im1) {
     //this.re = 1;   // compile error
     (*this).re = re1;
     this->im = im1; 
-}   
+}
 
 // "outline" method implementation:
 Complex Complex::sum(Complex b) {  
     return Complex(re+b.re, im+b.im);
 }
 
-
+void Complex::print() {
+    cout << re << " " << im;
+}
 
 int main() {
     Complex a(1,2);

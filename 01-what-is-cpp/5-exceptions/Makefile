@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named throw_a_string
+
+# Build rule for target.
+throw_a_string: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 throw_a_string
+.PHONY : throw_a_string
+
+# fast build rule for target.
+throw_a_string/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/throw_a_string.dir/build.make CMakeFiles/throw_a_string.dir/build
+.PHONY : throw_a_string/fast
+
+#=============================================================================
 # Target rules for targets named throw_an_exception
 
 # Build rule for target.
@@ -141,19 +154,6 @@ throw_an_object: cmake_check_build_system
 throw_an_object/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/throw_an_object.dir/build.make CMakeFiles/throw_an_object.dir/build
 .PHONY : throw_an_object/fast
-
-#=============================================================================
-# Target rules for targets named throw_a_string
-
-# Build rule for target.
-throw_a_string: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 throw_a_string
-.PHONY : throw_a_string
-
-# fast build rule for target.
-throw_a_string/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/throw_a_string.dir/build.make CMakeFiles/throw_a_string.dir/build
-.PHONY : throw_a_string/fast
 
 throw_a_string.o: throw_a_string.cpp.o
 .PHONY : throw_a_string.o

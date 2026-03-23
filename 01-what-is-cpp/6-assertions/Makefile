@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/3-namespace
+CMAKE_SOURCE_DIR = /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/6-assertions
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/3-namespace
+CMAKE_BINARY_DIR = /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/6-assertions
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/3-namespace/CMakeFiles /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/3-namespace//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/6-assertions/CMakeFiles /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/6-assertions//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/3-namespace/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/6-assertions/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,65 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named assert
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+assert: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 assert
+.PHONY : assert
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+assert/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assert.dir/build.make CMakeFiles/assert.dir/build
+.PHONY : assert/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-namespace.o: namespace.cpp.o
-.PHONY : namespace.o
+assert.o: assert.cpp.o
+.PHONY : assert.o
 
 # target to build an object file
-namespace.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/namespace.cpp.o
-.PHONY : namespace.cpp.o
+assert.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assert.dir/build.make CMakeFiles/assert.dir/assert.cpp.o
+.PHONY : assert.cpp.o
 
-namespace.i: namespace.cpp.i
-.PHONY : namespace.i
+assert.i: assert.cpp.i
+.PHONY : assert.i
 
 # target to preprocess a source file
-namespace.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/namespace.cpp.i
-.PHONY : namespace.cpp.i
+assert.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assert.dir/build.make CMakeFiles/assert.dir/assert.cpp.i
+.PHONY : assert.cpp.i
 
-namespace.s: namespace.cpp.s
-.PHONY : namespace.s
+assert.s: assert.cpp.s
+.PHONY : assert.s
 
 # target to generate assembly for a file
-namespace.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/namespace.cpp.s
-.PHONY : namespace.cpp.s
+assert.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assert.dir/build.make CMakeFiles/assert.dir/assert.cpp.s
+.PHONY : assert.cpp.s
 
 # Help Target
 help:
@@ -185,13 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... namespace.o"
-	@echo "... namespace.i"
-	@echo "... namespace.s"
+	@echo "... assert"
+	@echo "... assert.o"
+	@echo "... assert.i"
+	@echo "... assert.s"
 .PHONY : help
 
 

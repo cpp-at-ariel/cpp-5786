@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main.exe
+# Target rules for targets named TestMain
 
 # Build rule for target.
-main.exe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main.exe
-.PHONY : main.exe
+TestMain: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TestMain
+.PHONY : TestMain
 
 # fast build rule for target.
-main.exe/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/build
-.PHONY : main.exe/fast
+TestMain/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/build
+.PHONY : TestMain/fast
 
 Factorial.o: Factorial.cpp.o
 .PHONY : Factorial.o
 
 # target to build an object file
 Factorial.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/Factorial.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/Factorial.cpp.o
 .PHONY : Factorial.cpp.o
 
 Factorial.i: Factorial.cpp.i
@@ -142,7 +142,7 @@ Factorial.i: Factorial.cpp.i
 
 # target to preprocess a source file
 Factorial.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/Factorial.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/Factorial.cpp.i
 .PHONY : Factorial.cpp.i
 
 Factorial.s: Factorial.cpp.s
@@ -150,7 +150,7 @@ Factorial.s: Factorial.cpp.s
 
 # target to generate assembly for a file
 Factorial.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/Factorial.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/Factorial.cpp.s
 .PHONY : Factorial.cpp.s
 
 FactorialTest.o: FactorialTest.cpp.o
@@ -158,7 +158,7 @@ FactorialTest.o: FactorialTest.cpp.o
 
 # target to build an object file
 FactorialTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/FactorialTest.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/FactorialTest.cpp.o
 .PHONY : FactorialTest.cpp.o
 
 FactorialTest.i: FactorialTest.cpp.i
@@ -166,7 +166,7 @@ FactorialTest.i: FactorialTest.cpp.i
 
 # target to preprocess a source file
 FactorialTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/FactorialTest.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/FactorialTest.cpp.i
 .PHONY : FactorialTest.cpp.i
 
 FactorialTest.s: FactorialTest.cpp.s
@@ -174,15 +174,63 @@ FactorialTest.s: FactorialTest.cpp.s
 
 # target to generate assembly for a file
 FactorialTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/FactorialTest.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/FactorialTest.cpp.s
 .PHONY : FactorialTest.cpp.s
+
+ReporterEmpty.o: ReporterEmpty.cpp.o
+.PHONY : ReporterEmpty.o
+
+# target to build an object file
+ReporterEmpty.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/ReporterEmpty.cpp.o
+.PHONY : ReporterEmpty.cpp.o
+
+ReporterEmpty.i: ReporterEmpty.cpp.i
+.PHONY : ReporterEmpty.i
+
+# target to preprocess a source file
+ReporterEmpty.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/ReporterEmpty.cpp.i
+.PHONY : ReporterEmpty.cpp.i
+
+ReporterEmpty.s: ReporterEmpty.cpp.s
+.PHONY : ReporterEmpty.s
+
+# target to generate assembly for a file
+ReporterEmpty.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/ReporterEmpty.cpp.s
+.PHONY : ReporterEmpty.cpp.s
+
+ReporterGrader.o: ReporterGrader.cpp.o
+.PHONY : ReporterGrader.o
+
+# target to build an object file
+ReporterGrader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/ReporterGrader.cpp.o
+.PHONY : ReporterGrader.cpp.o
+
+ReporterGrader.i: ReporterGrader.cpp.i
+.PHONY : ReporterGrader.i
+
+# target to preprocess a source file
+ReporterGrader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/ReporterGrader.cpp.i
+.PHONY : ReporterGrader.cpp.i
+
+ReporterGrader.s: ReporterGrader.cpp.s
+.PHONY : ReporterGrader.s
+
+# target to generate assembly for a file
+ReporterGrader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/ReporterGrader.cpp.s
+.PHONY : ReporterGrader.cpp.s
 
 TestMain.o: TestMain.cpp.o
 .PHONY : TestMain.o
 
 # target to build an object file
 TestMain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/TestMain.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/TestMain.cpp.o
 .PHONY : TestMain.cpp.o
 
 TestMain.i: TestMain.cpp.i
@@ -190,7 +238,7 @@ TestMain.i: TestMain.cpp.i
 
 # target to preprocess a source file
 TestMain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/TestMain.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/TestMain.cpp.i
 .PHONY : TestMain.cpp.i
 
 TestMain.s: TestMain.cpp.s
@@ -198,7 +246,7 @@ TestMain.s: TestMain.cpp.s
 
 # target to generate assembly for a file
 TestMain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.exe.dir/build.make CMakeFiles/main.exe.dir/TestMain.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestMain.dir/build.make CMakeFiles/TestMain.dir/TestMain.cpp.s
 .PHONY : TestMain.cpp.s
 
 # Help Target
@@ -209,13 +257,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main.exe"
+	@echo "... TestMain"
 	@echo "... Factorial.o"
 	@echo "... Factorial.i"
 	@echo "... Factorial.s"
 	@echo "... FactorialTest.o"
 	@echo "... FactorialTest.i"
 	@echo "... FactorialTest.s"
+	@echo "... ReporterEmpty.o"
+	@echo "... ReporterEmpty.i"
+	@echo "... ReporterEmpty.s"
+	@echo "... ReporterGrader.o"
+	@echo "... ReporterGrader.i"
+	@echo "... ReporterGrader.s"
 	@echo "... TestMain.o"
 	@echo "... TestMain.i"
 	@echo "... TestMain.s"

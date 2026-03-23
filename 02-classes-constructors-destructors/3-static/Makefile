@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/3-namespace
+CMAKE_SOURCE_DIR = /mnt/c/Dropbox/ariel-cpp/cpp-5786/02-classes-constructors-destructors/3-static
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/3-namespace
+CMAKE_BINARY_DIR = /mnt/c/Dropbox/ariel-cpp/cpp-5786/02-classes-constructors-destructors/3-static
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/3-namespace/CMakeFiles /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/3-namespace//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Dropbox/ariel-cpp/cpp-5786/02-classes-constructors-destructors/3-static/CMakeFiles /mnt/c/Dropbox/ariel-cpp/cpp-5786/02-classes-constructors-destructors/3-static//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Dropbox/ariel-cpp/cpp-5786/01-what-is-cpp/3-namespace/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Dropbox/ariel-cpp/cpp-5786/02-classes-constructors-destructors/3-static/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named a.out
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+a.out: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 a.out
+.PHONY : a.out
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+a.out/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/build
+.PHONY : a.out/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,32 +150,32 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-namespace.o: namespace.cpp.o
-.PHONY : namespace.o
+points.index.o: points.index.cpp.o
+.PHONY : points.index.o
 
 # target to build an object file
-namespace.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/namespace.cpp.o
-.PHONY : namespace.cpp.o
+points.index.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/points.index.cpp.o
+.PHONY : points.index.cpp.o
 
-namespace.i: namespace.cpp.i
-.PHONY : namespace.i
+points.index.i: points.index.cpp.i
+.PHONY : points.index.i
 
 # target to preprocess a source file
-namespace.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/namespace.cpp.i
-.PHONY : namespace.cpp.i
+points.index.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/points.index.cpp.i
+.PHONY : points.index.cpp.i
 
-namespace.s: namespace.cpp.s
-.PHONY : namespace.s
+points.index.s: points.index.cpp.s
+.PHONY : points.index.s
 
 # target to generate assembly for a file
-namespace.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/namespace.cpp.s
-.PHONY : namespace.cpp.s
+points.index.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/points.index.cpp.s
+.PHONY : points.index.cpp.s
 
 # Help Target
 help:
@@ -185,13 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main"
+	@echo "... a.out"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... namespace.o"
-	@echo "... namespace.i"
-	@echo "... namespace.s"
+	@echo "... points.index.o"
+	@echo "... points.index.i"
+	@echo "... points.index.s"
 .PHONY : help
 
 

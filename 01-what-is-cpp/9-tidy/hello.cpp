@@ -12,17 +12,18 @@ using namespace std;
 const int NUM_OF_SUBMISSIONS_IN_SEMESTER = 12;
 
 int main() {
-    cout << "Each student should submit " << 12 << " exercises." << endl;
+    cout << "Each student should submit " << NUM_OF_SUBMISSIONS_IN_SEMESTER << " exercises." << endl;
 
-    int submission_count = 11;
-    if (submission_count >= 12) 
+    int submission_count = NUM_OF_SUBMISSIONS_IN_SEMESTER-1;
+    if (submission_count >= NUM_OF_SUBMISSIONS_IN_SEMESTER) 
         cout << "OK!"  << endl;
     else 
         cout << "Try again." << endl;
 
-    string submission_names[3] = {"a", "b", "c"};
-    // array<string,3> submission_names = {"a", "b", "c"};  // Array with a fixed size, like in C
+    // string submission_names[3] = {"a", "b", "c"};
+    array<string,3> submission_names = {"a", "b", "c"};  // Array with a fixed size, like in C
     cout << submission_names[0] << endl;
+    cout << submission_names.at(3) << endl;
     return 0;
 }
 

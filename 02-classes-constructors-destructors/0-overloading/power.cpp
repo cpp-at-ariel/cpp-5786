@@ -9,7 +9,7 @@
 using std::cout, std::endl;
 
 int power(int a, unsigned int b) {
-    cout << "   power of uints" << endl;
+    cout << "   power of uints (" << a << "," << b << ")" << endl;
     //cout << b;
     return b==0? 1: a*power(a,b-1);
 }
@@ -18,7 +18,8 @@ double power(double a, double b) {
      cout << "   power of reals" << endl;
      return exp(b*log(a));
 }
-
+// log(a^b) = b*log(a)
+// a^b = exp(b*log(a))
 
 int main() {
     /* Reminder for signed/unsigned *
@@ -35,7 +36,7 @@ int main() {
 
     cout << power(2, 3) << endl;
     cout << power(4.0, 0.5) << endl;
-    cout << power(2, 3.5) << endl;  // ???
+    // cout << power(2, 3.5) << endl;  // ???
     // cout << power(2.0,3.5) << endl;
     // cout << power(2, (int)3.5) << endl;  // ???
     // cout << power(2, -3) << endl;   // ???
