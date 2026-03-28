@@ -25,7 +25,7 @@ int main() {
     cout << "Before loop" << endl;
     this_thread::sleep_for(chrono::seconds(TIME));
 
-    for (uint i=0; i<5; ++i) {
+    for (size_t i=0; i<5; ++i) {
         cout << "Before list construction" << endl;
         this_thread::sleep_for(chrono::seconds(TIME));
 
@@ -43,7 +43,5 @@ int main() {
 
     cout << "After loop" << endl;
     this_thread::sleep_for(chrono::seconds(TIME));
-
-    IntList* listArray = new IntList[10] {100,100,100,100,100,100,100,100,100,100};
     return 0;
 }

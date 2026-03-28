@@ -1,14 +1,14 @@
 #include "IntList.hpp"
 
 void IntList::fill(int value) {
-    for (uint i=0; i<this->numInts; ++i)
+    for (size_t i=0; i<this->numInts; ++i)
         theInts[i] = value;
 }
 
-int IntList::get(uint index) {
+int IntList::get(size_t index) {
     return theInts[index];
 }
 
-void IntList::put(uint index, int value) {
+void IntList::put(size_t index, int value) {
     theInts[index] = value;
 }

@@ -29,6 +29,6 @@ class IntList {
         void print() {cout << "  theInts=" << theInts << endl; }
 
         void fill(int value);
-        int get(unsigned int index);
-        void put(unsigned int index, int value);
+        int get(size_t index);
+        void put(size_t index, int value);
 };
