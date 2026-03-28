@@ -23,7 +23,7 @@ class Point {
     //Point(int z) { x=y=z; }
 
     //Point(int xx, int yy): x(xx), y(yy)  { }
-    Point(int xx, int yy)  {  { setX(xx); setY(yy); } }
+    Point(int xx, int yy)  {  setX(xx); setY(yy); }
 };
 
 // #endif

@@ -29,8 +29,8 @@ int main() {
     cout << "rnum = " << &rnum << " " << rnum << " " << num << endl;
     rnum = 3;     // Here a reference is like a pointer
     cout << "rnum = " << &rnum << " " << rnum << " " << num << endl;
-    rnum = num2;  // Here a reference is unlike a pointer
+    rnum = num2;  
     cout << "rnum = " << &rnum << " " << rnum << " " << num << endl;
-    rnum += 4;
+    rnum += 4;    // Here a reference is unlike a pointer
     cout << "rnum = " << &rnum << " " << rnum << " " << num << endl << endl;
 }

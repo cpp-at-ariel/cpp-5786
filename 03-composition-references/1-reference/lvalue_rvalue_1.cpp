@@ -27,8 +27,10 @@ int main() {
     const int& r2 = x;
     //r2++;  // illegal
     //x++;   // legal
+
     // const int& r2 = cx;
-    const int& r2 = (x+1);
+    // const int& r2 = (x+1);
+    
     cout << "r2 = " << r2 << endl;
     //int* px2 = &r2;      // illegal for const reference... 
     //(*px2) = 10;         //    ... since it would allow us to do this

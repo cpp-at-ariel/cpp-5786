@@ -4,10 +4,5 @@ project(AutoProject CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_CXX_CLANG_TIDY
-    clang-tidy;
-    -checks=cppcoreguidelines-*
-)
-
-add_executable(Complex Complex.cpp)
-add_executable(a_referece_as_return_value a_referece_as_return_value.cpp)
+add_executable(Complex.exe Complex.cpp)
+add_executable(a_referece_as_return_value.exe a_referece_as_return_value.cpp)
