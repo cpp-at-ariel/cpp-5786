@@ -33,6 +33,7 @@ int main() {
         IntList list(SIZE);
         cout << list.get(5) << endl;
         list.fill(9);
+        
         cout << list.get(5) << endl;
         list.put(5, 100);
         cout << list.get(5) << endl;

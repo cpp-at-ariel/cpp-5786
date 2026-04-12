@@ -4,10 +4,5 @@ project(AutoProject CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_CXX_CLANG_TIDY
-    clang-tidy;
-    -checks=cppcoreguidelines-*
-)
-
-add_executable(ComplexDemo Complex.cpp ComplexDemo.cpp)
-add_executable(input Complex.cpp input.cpp)
+add_executable(ComplexDemoe.exe Complex.cpp ComplexDemo.cpp)
+add_executable(input.exe Complex.cpp input.cpp)

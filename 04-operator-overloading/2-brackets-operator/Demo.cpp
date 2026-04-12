@@ -21,7 +21,7 @@ int main() {
     // my_a = 5;
     IntList list0 {1000};
     list0 = 99;
-    //equivalent to: list0
+    //equivalent to: 
     // list0.operator=(99);
     cout << "list0[5] = " << list0[5] << endl;
     //equivalent to: 

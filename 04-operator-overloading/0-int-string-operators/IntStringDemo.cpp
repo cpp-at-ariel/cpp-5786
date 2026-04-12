@@ -52,7 +52,7 @@ ostream& operator<< (ostream& os, string s) {
 
 int main() {
     string x="abc", y="def";
-    
+
     cout << "3 * y  = " << 3 * y << endl;
     cout << "y * 3  = " << y * 3 << endl;
     //Equivalent to: 

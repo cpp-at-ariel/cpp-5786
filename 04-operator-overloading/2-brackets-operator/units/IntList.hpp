@@ -11,7 +11,7 @@ class IntList {
         unsigned int numInts;
 
     public:
-        IntList(unsigned int numInts):
+        IntList(size_t numInts):
           numInts(numInts),
           theInts (new int[numInts])
         {
@@ -33,16 +33,8 @@ class IntList {
         // Set all elements in this intList to value
         void operator=(int value);
 
-
-        // void operator=(int value) const {
-        //   theInts[5] = 6;
-        //   numInts = 6;
-        //   theInts = new int[7];
-        //   cout << "hihihi" << endl;
-        // }
-
-        const int operator[](unsigned int index) const;
-        int& operator[](unsigned int index);
+        const int operator[](size_t index) const;
+        int& operator[](size_t index);
         //int get(uint index) {return theInts[index];} // Java style
         //void set(uint index, int newValue); // Java style
 

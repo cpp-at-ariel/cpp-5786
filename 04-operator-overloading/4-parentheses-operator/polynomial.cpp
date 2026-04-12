@@ -63,9 +63,6 @@ int main() {
 	cout << "poly2(5) = " << poly2(5) << endl; 
 	cout << "Polynomial(5)(5) = " << Polynomial(5)(5) << endl; // prints 125
 
-	// Polynomial poly3;
-	// poly3(5);
-
 	cout << "minimize (x^2 + 3, -10, 10) = " << minimize(Polynomial(1,0,3), -10, 10) << endl;
 
 	return 0;

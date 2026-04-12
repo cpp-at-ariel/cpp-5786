@@ -28,6 +28,13 @@ int& g4() {   // bug
 }
 
 
+int& g5() {   // bug
+	int localnum = 7777;
+	return localnum;
+}
+
+
+
 int main() {
     cout << "globalnum = " << globalnum << endl;
     cout << "g1() = " << g1() << endl;
@@ -39,6 +46,7 @@ int main() {
     g2()=222;
     // g3()=333;
     g4()=444;  
+    g5();
 
     cout << endl << "globalnum = " << globalnum << endl;
     cout << "g1() = " << g1() << endl;

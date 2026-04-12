@@ -12,7 +12,8 @@ using namespace std;
 
 int main() {
     cout << "{" << endl;
-    {   
+    {
+        IntList myList {0};
         IntList listarray[5] {1,2,3,4,5};  // five constructions
     }
     cout << "}" << endl;

@@ -16,7 +16,7 @@ int main() {
         list0.fill(99);
         list0.print();
         cout << "l0.get(5) = " << list0.get(5) << endl;
-        //list0.~IntList();
+        // list0.~IntList();
     }
     cout << "}" << endl;
 
@@ -26,11 +26,13 @@ int main() {
         l1.print();
         l1.fill(999);
         cout << "l1.get(5) = " << l1.get(5) << endl;
+        cout << "  {" << endl;
         {
             IntList l2 = l1;
             l2.print();
             cout << "l2.get(5) = " << l2.get(5) << endl;
         }
+        cout << "  }" << endl;
         cout << "l1.get(5) = " << l1.get(5) << endl;
         l1.print();
     }
