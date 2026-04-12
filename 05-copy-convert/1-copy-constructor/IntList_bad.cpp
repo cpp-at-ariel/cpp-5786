@@ -66,7 +66,7 @@ int main() {
     cout << "list1[5] = " << list1[5] << endl << endl;
     cout << "---" << endl;
 
-    IntList list2 = list1; // equivalent to:
+    IntList list2 = list1; // equivalent expressions:
     // IntList list2 {list1};
     // IntList list2 (list1);
     cout << "list1[5] = " << list1[5] << endl;
@@ -76,15 +76,6 @@ int main() {
     cout << "list2[5] = " << list2[5] << endl << endl;
 
     IntList list3{20};
-
-
-    list3 = list1;
-
-    cout << "list1[5] = " << list1[5] << endl;
-    cout << "list3[5] = " << list3[5] << endl;
-    list3 = 3;
-    cout << "list1[5] = " << list1[5] << endl;
-    cout << "list3[5] = " << list3[5] << endl << endl;
 
     return 0;
 
