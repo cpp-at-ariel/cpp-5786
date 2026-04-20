@@ -19,6 +19,12 @@ class A{};
 int main(int argc, char **argv) {
     cout << "Complex Demo" << endl;
 
+    // float x = 5;
+    // float y = 6;
+    // x = y = 7;
+
+    // (x += 3) *= 4;
+
     Complex c1(1,2);
     Complex c2(2,3);
     Complex c3(3,4);
